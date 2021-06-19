@@ -6,7 +6,7 @@ func romanToInt(s string) int {
 		if i == 0 {
 			output = roman[string(s[i])]
 		} else {
-            next := 0
+            		next := 0
 			if i < len(s)-1 {
 				if roman[string(s[i])] == 1 || roman[string(s[i])] == 10 || roman[string(s[i])] == 100 {
 					next = roman[string(s[i+1])]
